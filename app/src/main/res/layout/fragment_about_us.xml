@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/background_color"
+    android:backgroundTintMode="screen"
+    android:background="@drawable/screen_background"
+    tools:context=".AboutUsFragment">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_main"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+
+    <ImageView
+        android:id="@+id/people_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/people_icon"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/people_icon"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:text="@string/about_us_content"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:lineSpacingMultiplier="1.3"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

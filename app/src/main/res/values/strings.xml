@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">OECS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- NAVIGATION DRAWER -->
+    <string name="explore">Explore</string>
+    <string name="podcast"> Podcasts </string>
+    <string name="about_us"> About Us </string>
+    <string name="social_connect"> Social Connect </string>
+    <string name="listen_now"> Listen NOW!!! </string>
+    <string name="trivia"> Trivia </string>
+    <string name="events"> Events </string>
+    <string name="watch_now"> Watch Now!!! </string>
+    <string name="weather"> Weather </string>
+    <string name="news_flash"> News FLASH </string>
+    <string name="live_tv"> Live TV </string>
+    
+    <!-- LISTEN NOW FRAGMENT -->
+    <string name="ecs_news"> Ecs news hours </string>
+    <string name="on_air"> On Air Now </string>
+    <string name="news"> News </string>
+    <string name="chat_radio"> <br> Ondo \n </br>
+    <br> Ecs \n </br>
+        <br> Chat \n </br>
+        <br> Radio </br>
+    </string>
+    
+    <!-- PODCASTS FRAGMENT -->
+    <string name="ecs_fun_time"> Ecs fun time #9 </string>
+    <string name="ecs_time"> 25:43 </string>
+    <string name="life_tune"> Lifetunes #20 </string>
+    <string name="tunes_time"> 13:39 </string>
+    <string name="jolly_funks"> Jolly Funks #11 </string>
+    <string name="funks_time"> 49:48 </string>
+    <string name="family_talks"> Family Talk #3 </string>
+    <string name="family_time"> 25:43 </string>
+    <string name="music_streams"> Music Stream #7 </string>
+    <string name="stream_time"> 29:42 </string>
+    <string name="show_more"> Show More... </string>
+
+
+    <!-- SIGN IN AND SIGN UP FRAGMENT -->
+    <string name="current_affairs"> Current Affairs Trivia </string>
+    <string name="sign_in_text"> Sign In to Begin Trivia </string>
+    <string name="enter_email"> Enter Email </string>
+    <string name="password"> Password </string>
+    <string name="begin_trivia"> Begin Trivia </string>
+    <string name="no_account"> Don\'t Have an Account? </string>
+    <string name="register"> Register </string>
+    <string name="full_name"> Full Name </string>
+    <string name="phone_number"> Phone Number </string>
+    <string name="already_have_an_acct">Already Have an Account? </string>
+    <string name="sign_in"> Sign In </string>
+    <string name="sign_up"> Sign Up </string>
+
+    <!-- TRIVIA FRAGMENT -->
+    <string name="ready_to_win"> Ready to win BIG? </string>
+    <string name="select_a_trivia"> Select a Trivia Below </string>
+    <string name="play"> Play </string>
+    <string name="did_you_know"> Did You Know? </string>
+    <string name="gk_quiz"> GK Quiz </string>
+    <string name="spell_it"> Spell IT! </string>
+    <string name="affairs"> Current Affairs </string>
+
+    <!-- SOCIAL CONNECT FRAGMENT -->
+    <string name="social_connect_text"> Lorem ipsum dolor sit amet, consetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</string>
+    <string name="chat_handle"> \@ondoecschatradio </string>
+
+
+    <!-- ONBOARDING SLIDES -->
+    <string name="slide_one_text"> 01/03 Next>>> </string>
+    <string name="slide_two_text"> 02/03 Next>>> </string>
+    <string name="slide_three_text"> 03/03 Explore>>></string>
+    <string name="slide1"> Enjoy Radio &amp; TV On the Go!!!</string>
+    <string name="slide2"> Plus Podcasts, News, Events &amp; More... </string>
+
+    <string name="about_us_content"> Lorem ipsum dolor sit amet, consetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no. </string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+
+</resources>

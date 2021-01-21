@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_item_listen_now"
+        android:title="@string/listen_now"
+        android:icon="@drawable/ic_baseline_radio"/>
+
+    <item
+        android:id="@+id/nav_item_podcasts"
+        android:title="@string/podcast"
+        android:icon="@drawable/ic_icon_awesome_podcast"/>
+
+    <item
+        android:id="@+id/nav_item_news_flash"
+        android:title="@string/news_flash"
+        android:icon="@drawable/ic_news"/>
+
+    <item
+        android:id="@+id/nav_item_weather"
+        android:title="@string/weather"
+        android:icon="@drawable/ic_baseline_cloud"/>
+
+    <item
+        android:id="@+id/nav_item_events"
+        android:title="@string/events"
+        android:icon="@drawable/ic_baseline_event_seat"/>
+
+    <item
+        android:id="@+id/nav_item_live_tv"
+        android:title="@string/live_tv"
+        android:icon="@drawable/ic_baseline_live_tv"/>
+
+    <item
+        android:id="@+id/nav_item_trivia"
+        android:title="@string/trivia"
+        android:icon="@drawable/ic_baseline_help"/>
+
+    <item
+        android:id="@+id/nav_item_about_us"
+        android:title="@string/about_us"
+        android:icon="@drawable/ic_baseline_groups"/>
+
+    <item
+        android:id="@+id/nav_item_social_connect"
+        android:title="@string/social_connect"
+        android:icon="@drawable/ic_baseline_emoji_emotions"/>
+
+
+
+
+</menu>

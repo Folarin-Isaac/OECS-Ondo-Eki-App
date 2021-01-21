@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/background_color"
+    android:backgroundTintMode="src_atop"
+    android:background="@drawable/screen_background"
+    tools:context=".TriviaFragment">
+
+    <include
+        android:id="@+id/app_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/app_bar_main"/>
+
+    <ImageView
+        android:id="@+id/question_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:src="@drawable/ic_group_questions"/>
+
+    <TextView
+        android:id="@+id/current_affairs_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_icon"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        android:textColor="@color/end_color"
+        android:textStyle="bold"
+        android:text="@string/ready_to_win"/>
+
+    <TextView
+        android:id="@+id/select_a_trivia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/current_affairs_text"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:text="@string/select_a_trivia"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_did_you_know"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_a_trivia"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/relative_layout_bg"
+        android:orientation="horizontal"
+        android:elevation="15dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_help"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/did_you_know_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/image_view"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/did_you_know"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@id/layout_did_you_know"
+        app:layout_constraintTop_toBottomOf="@id/select_a_trivia"
+        android:background="@drawable/play_button"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/play"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_gk_quiz"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_did_you_know"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/relative_layout_bg"
+        android:orientation="horizontal"
+        android:elevation="15dp">
+
+        <ImageView
+            android:id="@+id/help_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_help"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/gk_quiz_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/help_icon"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/gk_quiz"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/quiz_play_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@id/layout_gk_quiz"
+        app:layout_constraintTop_toBottomOf="@id/layout_did_you_know"
+        android:background="@drawable/play_button"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/play"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_spell_it"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_gk_quiz"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/relative_layout_bg"
+        android:orientation="horizontal"
+        android:elevation="15dp">
+
+        <ImageView
+            android:id="@+id/request_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_help"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/spell_it_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/request_icon"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/spell_it"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/spell_it_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@id/layout_spell_it"
+        app:layout_constraintTop_toBottomOf="@id/layout_gk_quiz"
+        android:background="@drawable/play_button"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/play"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_current_affairs"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_spell_it"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/relative_layout_bg"
+        android:orientation="horizontal"
+        android:elevation="15dp">
+
+        <ImageView
+            android:id="@+id/find_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_help"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/current_affairs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/find_icon"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/affairs"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/affairs_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@id/layout_current_affairs"
+        app:layout_constraintTop_toBottomOf="@id/layout_spell_it"
+        android:background="@drawable/play_button"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/play"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
